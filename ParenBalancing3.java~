@@ -1,0 +1,25 @@
+
+import java.util.*;
+
+public class ParenBalancing3 {
+
+    public static void main (String[] argv)
+    {
+	String s = "if ((x < y) && (Math.abs(x)>0)) { if(x==5) {x += 3;}}";o
+	checkParens (s);
+
+	s = "I think (I mean thought (but do I really mean think?)) ...";
+	checkParens (s);
+
+	s = "if ((x < y) && (Math.abs(x)>0) { if(x==5) {x += 3;}";
+	checkParens (s);
+
+	s = "I think (I mean thought )but do I really mean think?)) ...";
+	checkParens (s);
+    }
+
+    static void checkParens (String inputStr)
+    {
+    }
+
+}

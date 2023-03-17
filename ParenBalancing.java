@@ -43,6 +43,8 @@ public class ParenBalancing {
 
 		// Why do we need this checker?
 		// How can ch  ever be != '(' ?
+	        // I see now. This is in case we're dealing with multiple kinds of parens
+		// inside one stack.
 		if (ch != '(') {
 		    unbalanced = true;
 		    break;
