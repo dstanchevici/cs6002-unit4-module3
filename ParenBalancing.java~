@@ -1,0 +1,20 @@
+// Unit 4, module 3, ex. 3.6
+
+import java.util.*;
+
+public class ParenBalancing {
+
+    public static void main (String[] argv)
+    {
+	String s = "()(())()";
+	checkParens (s);
+
+	s = "((())";
+	checkParens (s);
+
+	s = ")(";
+	checkParens (s);
+		
+    }
+
+}
