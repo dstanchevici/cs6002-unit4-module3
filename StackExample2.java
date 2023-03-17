@@ -1,0 +1,25 @@
+// Unit 4, Module 3, Ex. 3.2
+
+import java.util.*;
+
+public class StackExample2 {
+
+    public static void main (String[] argv)
+    {
+	Stack<Integer> numberStack = new Stack<> ();
+	
+	numberStack.push (1);
+	numberStack.push (2);
+	numberStack.push (3);
+	numberStack.push (4);
+	numberStack.push (5);
+
+	int k = numberStack.pop();
+	System.out.println ("Element at top: " + k);
+
+	while ( ! numberStack.isEmpty() ) {
+	    System.out.println (numberStack.pop());
+	}
+    }
+
+}
