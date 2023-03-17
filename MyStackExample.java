@@ -18,7 +18,7 @@ public class MyStackExample {
 	String s;
 	while ( !toDoList.isEmpty() ) {
 	    s = toDoList.pop();
-	    System.out.println (s);
+	    System.out.println (" " + s);
 	}
     }
 }
