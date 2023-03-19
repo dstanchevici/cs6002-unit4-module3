@@ -1,6 +1,6 @@
-// Unit 4, module 3, ex. 3.12
+// Unit 4, module 3, ex. 3.13
 
-public class OurStackExample2 {
+public class OurImprovedStackExample {
 
     public static void main (String[] argv)
     {
