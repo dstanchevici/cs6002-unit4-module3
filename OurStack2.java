@@ -20,9 +20,7 @@ public class OurStack2 {
 	}
 	
 	top --;
-	char poppedItem = array.get (top);
-	array.remove (top);
-	return poppedItem;
+	return array.remove (top);
     }
 
 
