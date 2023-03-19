@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class QueuExample {
+public class QueueExample {
 
     public static void main (String[] argv)
     {
@@ -13,7 +13,8 @@ public class QueuExample {
 	taskQueue.add ("Work on CS 6002");
 	taskQueue.add ("Make dinner");
 	taskQueue.add ("Watch movie");
-
+	
+	System.out.println ("********");
 	System.out.print ("All tasks:");
 	printQueue (taskQueue);
 
@@ -24,13 +25,21 @@ public class QueuExample {
 	    System.out.print ("Remaining tasks:");
 	    printQueue (taskQueue);
 	}
+
+	System.out.println ("********");
+	System.out.println ("-> Tasks remaining: " + taskQueue.size());
 	
     }
 
     static void printQueue (LinkedList<String> queue)
     {
 	for (int i=0; i<queue.size(); i++) {
-	    System.out.print (" " + queue.get(i) + ",");
+	    if (i < queue.size() - 1) {
+		System.out.print (" " + queue.get(i) + ",");
+	    }
+	    else {
+		System.out.print (" " + queue.get(i));
+	    }
 	}
 	System.out.println ();	
     }
