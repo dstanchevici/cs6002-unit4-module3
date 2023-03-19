@@ -1,0 +1,25 @@
+
+import java.util.*;
+
+public class OurStack2 {
+
+    ArrayList<Character> array = new ArrayList<Character>();
+    int top = 0;
+
+    public void push (char ch)
+    {
+        // INSERT YOUR CODE
+    }
+
+    public char pop ()
+    {
+        // INSERT YOUR CODE
+    }
+
+
+    public boolean isEmpty ()
+    {
+        // INSERT YOUR CODE
+    }
+
+}
