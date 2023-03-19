@@ -1,7 +1,7 @@
 // Unit 4, module 3, ex. 3.12, class implementing stack with an array.
 // Used by OurStackExample and subsequent clients.
 
-public class OurStack {
+public class OurImprovedStack {
 
     char[] letters = new char [100];
 
@@ -13,6 +13,11 @@ public class OurStack {
     
     public void push (char ch)
     {
+	// Test for full stack.
+	if (top >= letters.length) {
+	    System.out.println ("ERROR: OurStack.push(): stack overflow");
+	    return;
+	}
 	letters[top] = ch;
 	top ++;
     }
@@ -20,6 +25,12 @@ public class OurStack {
 
     public char pop ()
     {
+	// Test for empty stack
+	if (top <= 0) {
+	    System.out.println ("ERROR in OurStack.pop(): stack empty");
+	    return '@'; // Needs a return statement, so junk letter is returned.
+	}
+	
 	top--;
 	return letters[top];
     }
