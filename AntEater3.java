@@ -36,7 +36,8 @@ public class AntEater3 {
 	// Draw ants as black dots.
 	DrawTool.setCircleColor ("black");
 
-	// nextAnt is not inside antQueue,
+	// Ex. 3.22
+	//nextAnt is not inside antQueue,
 	// so it needs to be drawn separately.
 	if (nextAnt != null) {
 	    DrawTool.drawCircle (nextAnt.x, nextAnt.y, 0.5);
