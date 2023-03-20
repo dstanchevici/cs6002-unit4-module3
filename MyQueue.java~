@@ -1,0 +1,11 @@
+// Unit 4, Module 3, ex. 3.24
+
+class QueueItem {
+    Coords coords;
+    QueueItem next;
+}
+
+public class MyQueue {
+
+
+}
