@@ -6,7 +6,7 @@ public class QueueExample3 {
         OurQueueWithArray taskQueue = new OurQueueWithArray ();
 
         // Add some strings.
-        taskQueue.add ("Pay bills");
+        taskQueue.add ("Pay bills");	
         taskQueue.add ("Clean room");
         taskQueue.add ("Do homework");
         taskQueue.add ("See movie");
