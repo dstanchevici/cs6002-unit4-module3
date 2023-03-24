@@ -46,6 +46,9 @@ public class MyArrayQueue {
 
     public Coords get (int k)
     {
+	if ( (k < 0) || (k >= numItems) ) {
+	    System.out.println ("ERROR in MyArrayQueue.get(): " + k + " is an inappropriate index for a queue with " + numItems + " items.");
+	}
 	return coords[k];
     }
 }
