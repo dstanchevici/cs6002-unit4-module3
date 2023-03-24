@@ -1,0 +1,29 @@
+// Unit 4, Module 3, ex. 3.30
+
+import java.util.*;
+
+public class StackImpl2 implements OurStackInterface {
+
+    // From OurStack3.java, ex. 3.16
+
+    LinkedList<Character> list = new LinkedList<>();
+
+    public void push (char ch)
+    {
+	list.add (ch);
+    }
+
+    public char pop ()
+    {
+	if (!list.isEmpty()) {
+	    return list.removeLast();
+	}
+	else {
+	    System.out.println ("Error in StackImpl2.pop(): stack empty");
+	    retrun '@';
+	}
+    }
+
+    
+
+}

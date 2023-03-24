@@ -1,11 +1,12 @@
 // Unit 4, Module 3, ex. 3.24
+// Also, ex. 3.27 with "implements QueueDataStructure" added.
 
 class QueueItem {
     Coords coords;
     QueueItem next;
 }
 
-public class MyQueue {
+public class MyQueue implements QueueDataStructure {
 
     QueueItem front, rear;
     int numItems = 0;

@@ -1,6 +1,8 @@
 // Unit 4, Module 3, ex. 3.25
+// Also, Unit 4, Module 3, ex. 3.27.
+// Note: 3.27 adds "implements QueueDataStructure"
 
-public class MyArrayQueue {
+public class MyArrayQueue implements QueueDataStructure {
 
     Coords[] coords = new Coords [100];
 
